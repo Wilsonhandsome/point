@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lunbo.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        li{
+            float: left;
+        }
+        #outer{
+            width: 800px;
+            height: 360px;
+            overflow: hidden;
+            position: relative;
+        }
+        #banner{
+            width: 4000px;
+            height: 360px;
+        }
+        #banner img{
+            width: 800px;
+            height: 360px;
+        }
+        #btn{
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+        }
+        #btn li{
+            width: 30px;
+            height: 30px;
+            background: rgba(0 ,0, 0, 0.5);
+            text-align: center;
+            line-height: 30px;
+            margin-right: 20px;
+        }
+        p{
+            position: absolute;
+            width: 30px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            background: rgba(0,0,0,0.5);
+            font-size: 30px;
+            display: none;
+        }
+        #turnleft{
+            left: 30px;
+            top: 50%;
+            margin-top: -50px;
+        }
+        #turnright{
+            right: 30px;
+            top: 50%;
+            margin-top: -50px;
+        }
+    </style>
+</head>
+<body>
+<div id="outer">
+    <ul id="banner" style="transition: all 2s;">
+        <li><img src="img/10.jpg"></li>
+        <li><img src="img/11.jpg"></li>
+        <li><img src="img/12.jpg"></li>
+        <li><img src="img/13.jpg"></li>
+        <li><img src="img/10.jpg"></li>
+    </ul>
+    <ul id="btn">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <p id="turnleft">&lt;</p>
+    <p id="turnright">&gt;</p>
+</div>
+</body>
+</html>

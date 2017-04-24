@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>触壁反弹</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<div id="">
+			<ul id="ul">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+			//颜色
+			function red() {
+				var stu = "#";
+				for(var i = 0; i < 3; i++) {
+					stu += parseInt(Math.random() * 100) + 1;
+				}
+				return stu;
+			}	
+					i_1 = 0;
+					i_2 = 0;
+					j_1 = 0;
+					j_2 = 0;
+					i_1_1 = 0;
+					i_2_1 = 0;
+					j_1_1 = 0;
+					j_2_1 = 0;
+					i_1_2 = 0;
+					i_2_2 = 0;
+					j_1_2 = 0;
+					j_2_2 = 0;
+					i_1_3 = 0;
+					i_2_3 = 0;
+					j_1_3 = 0;
+					j_2_3 = 0;
+			var rr=document.getElementsByTagName("li")[0];
+			var rr1=document.getElementsByTagName("li")[1];
+			var rr2=document.getElementsByTagName("li")[2];
+			var rr3=document.getElementsByTagName("li")[3];
+			setInterval(function () {
+						if(i_1 == 550 || i_1 == 0 || i_2 == 750 || i_2 == 0) {
+							rr.style.background = 'red';
+						}
+						if(parseInt(j_1 / 560) % 2 == 0) {
+							rr.style.top = (i_1 += 2) + "px";
+							j_1 += 2;
+						} else {
+							rr.style.top = (i_1 -= 2) + "px";
+							j_1 += 2;
+						}
+						if(parseInt(j_2 / 760) % 2 == 0) {
+							rr.style.left = (i_2 +=1) + "px";
+							j_2 += 1;
+						} else {
+							rr.style.left = (i_2 -= 1) + "px";
+							j_2 += 1;
+						}
+					}, 10);
+						setInterval(function () {
+						if(i_1_1 == 550 || i_1_1 == 0 || i_2_1 == 750 || i_2_1 == 0) {
+							rr1.style.background = 'red';
+						}
+						if(parseInt(j_1_1 / 560) % 2 == 0) {
+							rr1.style.top = (i_1_1 += 1) + "px";
+							j_1_1 += 1;
+						} else {
+							rr1.style.top = (i_1_1 -= 1) + "px";
+							j_1_1 += 1;
+						}
+						if(parseInt(j_2_1/ 760) % 2 == 0) {
+							rr1.style.left = (i_2_1 +=3) + "px";
+							j_2_1 += 3;
+						} else {
+							rr1.style.left = (i_2_1-= 3) + "px";
+							j_2_1 += 3;
+						}
+					}, 10);
+						setInterval(function () {
+						if(i_1_2 == 550 || i_1_2 == 0 || i_2_2 == 750 || i_2_2 == 0) {
+							rr2.style.background = 'red';
+						}
+						if(parseInt(j_1_2 / 560) % 2 == 0) {
+							rr2.style.top = (i_1_2 += 3) + "px";
+							j_1_2 += 3;
+						} else {
+							rr2.style.top = (i_1_2 -= 3) + "px";
+							j_1_2 += 3;
+						}
+						if(parseInt(j_2_2/ 760) % 2 == 0) {
+							rr2.style.left = (i_2_2 +=3) + "px";
+							j_2_2 += 3;
+						} else {
+							rr2.style.left = (i_2_2-= 3) + "px";
+							j_2_2 += 3;
+						}
+					}, 10);
+					setInterval(function () {
+						if(i_1_3 == 550 || i_1_3 == 0 || i_2_3 == 750 || i_2_3 == 0) {
+							rr3.style.background = 'red';
+						}
+						if(parseInt(j_1_3 / 560) % 2 == 0) {
+							rr3.style.top = (i_1_3 += 2) + "px";
+							j_1_3 += 2;
+						} else {
+							rr3.style.top = (i_1_3 -= 2) + "px";
+							j_1_3 += 2;
+						}
+						if(parseInt(j_2_3/ 760) % 2 == 0) {
+							rr3.style.left = (i_2_3 +=2) + "px";
+							j_2_3 += 2;
+						} else {
+							rr3.style.left = (i_2_3-= 2) + "px";
+							j_2_3 += 2;
+						}
+					}, 10);
+		}
+	</script>
+
+</html>
