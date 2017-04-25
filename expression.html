@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //正则表达式介绍
+    //正则表达式(regular expression)是一个描述字符模式的对象
+    //javascript的RegExp类表示正则表达式
+
+
+   // 正则表达式的定义
+    //javascript中的正则表达式用RegExp对象表示,可以使用Reg()
+    //构造函数来创建RegExp对象，不过RegExp，不过RegExp
+    //对象更多的是通过一种特殊的直接量语法来创建
+
+
+    var pattern=/d$/;
+    console.log(typeof pattern)
+    console.log(pattern.constructor);
+    var pattern=new RegExp("w$");
+
+
+
+    var str="a,b,c";
+    //console.log(str.split(''));
+    console.log(str.split(/\s+/));
+    //split用来分割字符串为数组
+    //此时此刻\s表示空白字符+表示出现一次或多次（至少要出现一次）
+
+    //当我们不能用一个完整的字符串表达这个切割符号的时候，但是我们能提炼换一个规则来切割
+    //此时我们就可以用正则表达式表示这个规则，来切割字符串
+    console.log('==============');
+    var str2="bbaaccdddddaeeadaseeeef";
+    console.log(str2.split(/a+/));
+
+
+    //今天我们学习6个方法
+    //正则相关exec test
+    //字符串相关方法
+</script>
+</html>
